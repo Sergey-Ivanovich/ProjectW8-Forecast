@@ -83,6 +83,11 @@ div.weather-info-container {
   justify-content: space-between;
 }
 
+.weather-icon {
+  position: relative;
+  top: 30px;
+}
+
 .forecast-container {
   color: rgba(0, 0, 0, 0.4);
   margin: 20px 0px;
