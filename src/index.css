@@ -95,13 +95,14 @@ div.weather-info-container {
 
   border-radius: 10px;
   transition: all 150ms ease-in-out;
-  background-color: rgba(0, 0, 0, 0.09);
-  border: 3px solid rgba(0, 0, 0, 0.09);
+
+  background-color: white;
+  border: 3px solid rgba(0, 0, 0, 0.4);
 }
 
 .day-container:hover {
-  border-color: rgba(0, 0, 0, 0.4);
-  background-color: white;
+  border-color: rgba(0, 0, 0, 0.09);
+  background-color: rgba(0, 0, 0, 0.09);
 }
 
 .day-info {
