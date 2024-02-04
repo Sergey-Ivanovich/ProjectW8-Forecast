@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/index.css" />
+    <title>Weather Forecast</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <form id="city-form">
+          <div class="form-container">
+            <input
+              id="city-box"
+              class="input-city-box"
+              type="text"
+              required
+              placeholder="Enter City"
+            />
+            <input class="submit-button" type="submit" value="Submit" />
+          </div>
+        </form>
+      </header>
+
+      <hr />
+      <main>
+        <div class="weather-info-container">
+          <div class="weather-info">
+            <h1>LOADING</h1>
+            <p>
+              <span id="time-shown"> XX XX:XX </span>,
+              <span id="shown-condition"> XX</span> <br />
+              Humidity: <strong id="shown-humidity">XX%</strong> Wind Speed:
+              <strong id="shown-windspeed">XX Km/h</strong>
+            </p>
+          </div>
+          <span class="temperature-info"
+            ><span id="weather-icon" class="weather-emoji"></span>
+            <span id="shownTemp" class="temp"> </span
+            ><span class="temp-metric">°C</span></span
+          >
+        </div>
+      </main>
+      <hr />
+      <footer>
+        <p>
+          This Project was Coded by <a href="#">Sergey I.</a>, and is
+          open-sourced on <a href="#">Github</a> and hosted on
+          <a href="#">Netlify</a>
+        </p>
+      </footer>
+    </div>
+
+    <script src="src/index.js"></script>
+  </body>
+</html>
