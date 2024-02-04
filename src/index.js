@@ -57,9 +57,38 @@ function cityHandle(event) {
   apiSearch(city.value);
 }
 
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+
+  let days = [`Tue`, `Wed`, `Thu`, `Fri`, `Sat`];
+  let forecastHtml = ``;
+
+  days.forEach(function (day) {
+    forecastHtml =
+      forecastHtml +
+      `
+    <div class="day-container">
+    <div class="day-info">
+    <span class="forecast-day"> ${day} </span>
+    
+    <br />
+    <span class="weather-emoji"> ☀️ </span><br />
+    
+    <span class="day-temp">
+    <span class="max-day-temp"> 31°c</span>
+    <span class="min-day-temp"> 28°c</span>
+    </span>
+    </div>
+    </div>
+    `;
+  });
+
+  forecastElement.innerHTML = forecastHtml;
+}
+
 let cityForm = document.querySelector("#city-form");
 cityForm.addEventListener("submit", cityHandle);
 
 apiSearch(`Moscow`);
 
-let forecast = document.querySelector("#forecast");
+displayForecast();

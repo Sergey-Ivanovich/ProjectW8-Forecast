@@ -92,7 +92,7 @@ div.weather-info-container {
 
 .day-container {
   padding: 10px 30px;
-
+  margin: 10px;
   border-radius: 10px;
   transition: all 150ms ease-in-out;
 
