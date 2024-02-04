@@ -83,6 +83,28 @@ div.weather-info-container {
   justify-content: space-between;
 }
 
+.forecast-container {
+  color: rgba(0, 0, 0, 0.4);
+  margin: 20px 0px;
+  display: flex;
+}
+
+.day-container {
+  padding: 10px 30px;
+  border: 3px solid rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+}
+
+.day-info {
+  text-align: center;
+}
+
+.day-temp {
+  color: red;
+}
+.max-day-temp {
+}
+
 .temperature-info {
   position: relative;
   bottom: 50px;
@@ -108,4 +130,8 @@ div.weather-info-container {
 .form-container {
   display: flex;
   justify-content: space-between;
+}
+
+.forecast-separator-line {
+  margin: 20px -20px;
 }
