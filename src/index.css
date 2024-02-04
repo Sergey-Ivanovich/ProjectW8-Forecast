@@ -87,12 +87,21 @@ div.weather-info-container {
   color: rgba(0, 0, 0, 0.4);
   margin: 20px 0px;
   display: flex;
+  justify-content: space-around;
 }
 
 .day-container {
   padding: 10px 30px;
-  border: 3px solid rgba(0, 0, 0, 0.4);
+
   border-radius: 10px;
+  transition: all 150ms ease-in-out;
+  background-color: rgba(0, 0, 0, 0.09);
+  border: 3px solid rgba(0, 0, 0, 0.09);
+}
+
+.day-container:hover {
+  border-color: rgba(0, 0, 0, 0.4);
+  background-color: white;
 }
 
 .day-info {
@@ -102,7 +111,9 @@ div.weather-info-container {
 .day-temp {
   color: red;
 }
-.max-day-temp {
+.min-day-temp {
+  opacity: 60%;
+  margin-left: 10px;
 }
 
 .temperature-info {
@@ -123,8 +134,7 @@ div.weather-info-container {
 }
 
 .weather-emoji {
-  position: relative;
-  top: 30px;
+  font-size: 40px;
 }
 
 .form-container {

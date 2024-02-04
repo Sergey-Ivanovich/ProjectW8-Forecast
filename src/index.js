@@ -61,3 +61,5 @@ let cityForm = document.querySelector("#city-form");
 cityForm.addEventListener("submit", cityHandle);
 
 apiSearch(`Moscow`);
+
+let forecast = document.querySelector("#forecast");
