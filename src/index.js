@@ -18,6 +18,8 @@ function weatherRefresh(response) {
   conditionElement.innerHTML = response.data.condition.description;
   cityNameElement.innerHTML = response.data.city;
   tempElement.innerHTML = `${currentTemp} `;
+
+  getForecast(response.data.city);
 }
 
 function formatDate(date) {
@@ -57,7 +59,15 @@ function cityHandle(event) {
   apiSearch(city.value);
 }
 
-function displayForecast() {
+function getForecast(city) {
+  let apiKey = `oe3107c03bbf1b061844a8c3d518t9b3`;
+  let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}`;
+  axios.get(apiUrl).then(displayForecast);
+}
+
+function displayForecast(response) {
+  console.log(response.data);
+
   let forecastElement = document.querySelector("#forecast");
 
   let days = [`Tue`, `Wed`, `Thu`, `Fri`, `Sat`];
@@ -90,5 +100,3 @@ let cityForm = document.querySelector("#city-form");
 cityForm.addEventListener("submit", cityHandle);
 
 apiSearch(`Moscow`);
-
-displayForecast();
