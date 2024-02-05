@@ -73,7 +73,7 @@ input.submit-button:active {
 div.container {
   border-radius: 20px;
   margin: 60px auto;
-  max-width: 700px;
+  max-width: 800px;
   padding: 10px;
   border: 2px solid black;
 }
@@ -96,8 +96,8 @@ div.weather-info-container {
 }
 
 .day-container {
-  padding: 10px 30px;
-  margin: 10px;
+  padding: 10px 8px;
+  margin: 5px;
   border-radius: 10px;
   transition: all 150ms ease-in-out;
 
@@ -139,8 +139,8 @@ div.weather-info-container {
   font-size: 20px;
 }
 
-.weather-emoji {
-  font-size: 40px;
+.weather-emoji-icon {
+  width: 100%;
 }
 
 .form-container {
